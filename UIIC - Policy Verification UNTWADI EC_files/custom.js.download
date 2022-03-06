@@ -1,0 +1,408 @@
+
+$(document).ready(function() {
+
+    $('#lob').change(function(event) {
+        var lobDesc = $("#lob").val();
+
+        if(lobDesc!='0'){
+            displayWaitModal();
+            
+            $.post('../portal/MenuAction.do?sid='+Math.random(), {
+                method : 'getProduct',               
+                lobName : lobDesc
+            }, function(response) {
+                try{
+                    var select = $('#productCode');
+                    select.find('option').remove();
+                    /*$('<option>').val("0").text("Select").appendTo(select);*/
+                    $.each(response, function(index, value) {
+                        var obj = $.parseJSON( value);
+                        $('<option>').val(obj.productType).text(obj.productDesc).appendTo(select);
+                    });
+                }catch(err) {
+                }
+
+                hideWaitModal();
+            });
+        }else{
+            var select = $('#productCode');
+            select.find('option').remove();
+            $('<option>').val("0").text("Select").appendTo(select);
+        }
+    });
+
+
+
+  
+
+
+
+    
+
+
+    $(".request_update" ).change(function() {
+    
+        if ($( this ).val() !=''){           
+            this.form.submit();
+        }
+    });
+
+
+
+   /* $('#login').click(function(e) {
+
+        displayWaitModal();
+
+    });*/
+    
+    
+      $('#selectProduct').click(function(e) {
+
+        displayWaitModal();
+
+    });
+
+
+
+});
+
+
+function displayWaitModal(){
+
+    $.loadingBlockShow({
+        imgPath: '../asset/images/wait.svg',
+        text: 'Loading ...',
+        style: {
+            position: 'fixed',
+            width: '100%',
+            height: '100%',
+            background: 'rgba(0, 0, 0, .6)',
+            left: 0,
+            top: 0,
+            zIndex: 10000
+        }
+    });
+
+}
+
+
+function hideWaitModal(){
+    $.loadingBlockHide();
+}
+
+function callDatePicker(fieldRef)
+{
+
+   
+
+        
+    $(fieldRef).datetimepicker({
+        //language:  'fr',
+        format:'dd/mm/yyyy',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0,
+        startDate: "2017-04-01 00:00",
+        endDate: "2050-03-31 23:59"
+
+
+
+    });
+
+      
+}
+
+
+function auditCalendarFormElementDiesabled(mode)
+{
+    if(mode=='session_id'){
+
+        $( "#roCodeCreate" ).prop( "disabled", true );
+        $( "#officeCode" ).prop( "disabled", true );
+        $( "#assignedTo" ).prop( "disabled", true );
+        $( "#year" ).prop( "disabled", true );
+        $( "#category" ).prop( "disabled", true );
+         $( "#officeEmail" ).prop( "disabled", true );
+
+    }
+    if(mode=='view_only'){
+
+        $( "#roCodeCreate" ).prop( "disabled", true );
+        $( "#officeCode" ).prop( "disabled", true );
+        $( "#assignedTo" ).prop( "disabled", true );
+        $( "#year" ).prop( "disabled", true );
+        $( "#category" ).prop( "disabled", true );
+        $( "#officeEmail" ).prop( "disabled", true );
+        $( "#startDate" ).prop( "disabled", true );
+        $('#startDate_c').datetimepicker('remove');
+        $('#startDate_c > .form-control').prop('disabled', true);
+
+        $( "#endDate" ).prop( "disabled", true );
+        $('#endDate_c').datetimepicker('remove');
+        $('#endDate_c > .form-control').prop('disabled', true);
+
+        $( "#scheduledOn" ).prop( "disabled", true );
+        $('#scheduledOn_c').datetimepicker('remove');
+        $('#scheduledOn_c > .form-control').prop('disabled', true);
+
+        $( "#holder" ).prop( "disabled", true );
+
+    }
+}
+
+// **************************** FORM VALIDATOR ******************************
+
+// create calender
+$(document).ready(function() {
+    $('#auditCreateButton').click(function(e) {
+        displayWaitModal();
+        var isValid=0;
+        resetErrors();
+        $.post('../auditcalendar/AuditCalendarAjax.do?sid='+Math.random(), {
+            method : 'validateAuditCalender',
+            pRoCode : $('#roCodeCreate').val(),
+            pOfficeCode : $('#officeCode').val() ,
+            pAssignedTo : $('#assignedTo').val() ,
+            pYear : $('#year').val() ,
+            pCategory : $('#category').val() ,
+            pOfficeEmail : $('#officeEmail').val()
+        }, function(response) {
+            isValid=1;
+            try{
+                $.each(response, function(index, value) {
+                    var obj = $.parseJSON( value);
+                    if (obj.FieldStatus!='SUCCESS'){
+                        isValid=0;
+                        var msg = '<label class="errorLebel" for="'+obj.FieldName+'">'+obj.FieldStatus+'</label>';
+                        $('input[name="' + obj.FieldName + '"], select[name="' + obj.FieldName + '"]').addClass('inputTxtError').after(msg);
+                    }
+                });
+            }catch(err) {
+                isValid=0;
+            }
+           
+            if(isValid==0)  {
+                hideWaitModal();
+            }else{
+                $("#auditCreateForm").submit();
+            }
+            
+        });       
+      
+
+    });
+
+});
+
+
+// create session
+$(document).ready(function() {
+    $('#createSessionButton').click(function(e) {
+        displayWaitModal();
+        var isValid=0;
+        resetErrors();
+        $.post('../auditcalendar/AuditCalendarAjax.do?sid='+Math.random(), {
+            method : 'validateCreateSession',
+            pStartDate : $('#startDate').val(),
+            pEndDate : $('#endDate').val() ,
+            pScheduledOn : $('#scheduledOn').val() ,
+            pHolder : $('#holder').val() 
+        }, function(response) {
+            isValid=1;
+            try{
+                $.each(response, function(index, value) {
+                    var obj = $.parseJSON( value);
+                    if (obj.FieldStatus!='SUCCESS'){
+                        isValid=0;
+                        var msg = '<label class="errorLebel" for="'+obj.FieldName+'">'+obj.FieldStatus+'</label>';
+                        $('input[name="' + obj.FieldName + '"], select[name="' + obj.FieldName + '"]').addClass('inputTxtError').after(msg);
+                    }
+                });
+            }catch(err) {
+                isValid=0;
+            }
+
+            if(isValid==0)  {
+                hideWaitModal();
+            }else{
+                $("#createSessionForm").submit();
+            }
+
+        });
+
+
+    });
+
+});
+
+
+// modify session
+$(document).ready(function() {
+    $('#modifyCalendarButton').click(function(e) {
+        displayWaitModal();
+        var isValid=0;
+        resetErrors();
+        $.post('../auditcalendar/AuditCalendarAjax.do?sid='+Math.random(), {
+            method : 'validateModifyAuditCalender',
+            pRoCode : $('#roCodeCreate').val(),
+            pOfficeCode : $('#officeCode').val() ,
+            pAssignedTo : $('#assignedTo').val() ,
+            pYear : $('#year').val() ,
+            pCategory : $('#category').val() ,
+            pOfficeEmail : $('#officeEmail').val(),
+            pStartDate : $('#startDate').val(),
+            pEndDate : $('#endDate').val() ,
+            pScheduledOn : $('#scheduledOn').val() ,
+            pHolder : $('#holder').val(),
+            previousOfficeCode : $('#previousOfficeCode').val()
+        }, function(response) {
+            isValid=1;
+            try{
+                $.each(response, function(index, value) {
+                    var obj = $.parseJSON( value);
+                    if (obj.FieldStatus!='SUCCESS'){
+                        isValid=0;
+                        var msg = '<label class="errorLebel" for="'+obj.FieldName+'">'+obj.FieldStatus+'</label>';
+                        $('input[name="' + obj.FieldName + '"], select[name="' + obj.FieldName + '"]').addClass('inputTxtError').after(msg);
+                        
+                    }
+                });
+            }catch(err) {
+                isValid=0;
+            }
+
+            if(isValid==0)  {
+                hideWaitModal();
+            }else{
+                $("#modifyCalendarForm").submit();
+            }
+
+        });
+
+
+    });
+
+});
+
+
+// user request
+
+$(document).ready(function() {
+    $('#requestSaveButton').click(function(e) {
+        displayWaitModal();
+        var isValid=0;
+        resetErrors();
+        $.post('../auditcalendar/UserRequestAjax.do?sid='+Math.random(), {
+            method : 'validateNewRequest',
+            pRequestType : $('#requestType').val(),
+            pModificationRemarks : $('#modificationRemarks').val()
+        }, function(response) {
+            isValid=1;
+            try{
+
+                $.each(response, function(index, value) {
+                    var obj = $.parseJSON( value);
+                  
+                    if (obj.FieldStatus!='SUCCESS'){  //
+                        isValid=0;
+                        var msg = '<label class="errorLebel" for="'+obj.FieldName+'">'+obj.FieldStatus+'</label>';
+                        $('input[name="' + obj.FieldName + '"], select[name="' + obj.FieldName + '"],textarea[name="' + obj.FieldName + '"]').addClass('inputTxtError').after(msg);
+                    }
+                });
+            }catch(err) {
+                isValid=0;
+            }
+
+            if(isValid==0)  {
+                hideWaitModal();
+            }else{
+                $("#requestSaveForm").submit();
+            }
+
+        });
+
+
+    });
+
+});
+
+
+// rejection remarks
+
+$(document).ready(function() {
+    $('#requestRejectionButton').click(function(e) {
+        displayWaitModal();
+        var isValid=0;
+        resetErrors();
+        $.post('../auditcalendar/UserRequestAjax.do?sid='+Math.random(), {
+            method : 'validateRejectionRemarks',
+            pModificationRemarks : $('#modificationRemarks').val()
+        }, function(response) {
+            isValid=1;
+            try{
+
+                $.each(response, function(index, value) {
+                    var obj = $.parseJSON( value);
+
+                    if (obj.FieldStatus!='SUCCESS'){  //
+                        isValid=0;
+                        var msg = '<label class="errorLebel" for="'+obj.FieldName+'">'+obj.FieldStatus+'</label>';
+                        $('input[name="' + obj.FieldName + '"], select[name="' + obj.FieldName + '"],textarea[name="' + obj.FieldName + '"]').addClass('inputTxtError').after(msg);
+                    }
+                });
+            }catch(err) {
+                isValid=0;
+            }
+
+            if(isValid==0)  {
+                hideWaitModal();
+            }else{
+                $("#requestRejectionForm").submit();
+            }
+
+        });
+
+
+    });
+
+});
+
+function resetErrors() {
+    $('form input, form select, form textarea').removeClass('inputTxtError');
+    $('label.errorLebel').remove();
+}
+ function logInValid(){
+               if($("#username").val().trim().length === 0){
+                 $("#loginError").html('Enter valid Username.');
+                  return false;
+               }
+               if($("#password").val().trim().length === 0){
+                $("#loginError").html('Enter valid Password.');
+                return false;
+               }
+               if($("#userCaptcha").val().trim().length === 0){
+                   $("#loginError").html('Enter Captcha.');
+                   return false;
+               }
+               var pass = $("#password").val().trim();
+               $("#password").val("");
+               var iv = CryptoJS.lib.WordArray.random(128/8).toString(CryptoJS.enc.Hex);
+               var salt = CryptoJS.lib.WordArray.random(128/8).toString(CryptoJS.enc.Hex);
+
+               var aesUtil = new AesUtil(128, 1000);
+               var ciphertext = aesUtil.encrypt(salt, iv, '1234567891234567', pass);
+
+               var aesPassword = (iv + "::" + salt + "::" + ciphertext);
+               var password = btoa(aesPassword);         
+               $("#password").val(password);
+               displayWaitModal();
+               return true;
+               
+             }
+ function refreshCaptcha(){
+	 $('#captchaImg').attr('src','../login/LoginCaptcha.do');
+ }

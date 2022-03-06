@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)file:///E:/OFFICE/LALIT/New%20folder/web/UIIC%20-%20Policy%20Verification.html -->
+<html lang="en"><!-- Mirrored from portal.uiic.in/GCWebPortal/tb/PolicyVerification.do?p=51525F434F44457C3136323830313434313950313032343034363539 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Mar 2022 13:53:52 GMT --><!-- Added by HTTrack --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- /Added by HTTrack -->
+
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+	 
+<title>UIIC - Policy Verification</title>
+  
+       <!-- perevent clickjacking-->
+
+
+<script type="text/javascript">
+   if (self === top) {
+       var antiClickjack = document.getElementById("antiClickjack");
+       antiClickjack.parentNode.removeChild(antiClickjack);
+   } else {
+       top.location = self.location;
+   }
+</script>
+<!-- end perevent clickjacking--> 
+        
+        
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="./UIIC - Policy Verification UNTWADI EC_files/bootstrap.min.css">
+        <script type="text/javascript" src="./UIIC - Policy Verification UNTWADI EC_files/jquery-3.6.0.min.js.download"></script>
+        <script src="./UIIC - Policy Verification UNTWADI EC_files/bootstrap.min5e1f.js.download"></script>
+        
+
+        <link href="./UIIC - Policy Verification UNTWADI EC_files/MainWndStyle1.css" rel="stylesheet" type="text/css" title="styleid" media="all">
+        <link href="./UIIC - Policy Verification UNTWADI EC_files/SubWndStyle.css" rel="stylesheet" type="text/css" title="styleid" media="all">
+        <link rel="stylesheet" type="text/css" href="./UIIC - Policy Verification UNTWADI EC_files/styles.css">
+        <link href="./UIIC - Policy Verification UNTWADI EC_files/calendar.css" rel="stylesheet" type="text/css">
+        <script src="./UIIC - Policy Verification UNTWADI EC_files/validation.js.download"></script>
+
+
+<script type="text/javascript" language="javascript">
+function ifIE8()
+                {
+                  if (document.all && document.querySelector && !document.addEventListener) {
+                        alert('Current Browser Version is below IE9. This web site is best viewed with Internet Explorer 9 or higher');
+                    }
+                }
+function disableBackButton()
+                            {
+                                window.history.forward();
+                            }
+setTimeout("disableBackButton()", 0);
+
+</script>
+<script type="text/javascript">
+		$(document).ready(function() {
+			
+			$("form").attr('autocomplete', 'off'); // Switching form autocomplete attribute to off
+		});
+		
+	</script>
+</head>
+
+<body onload="ifIE8()">
+<div class="container">
+
+        <div class="panel panel-success">
+			
+                          <div class=" logotablebg">
+
+                            <div class="row">
+
+                                    <div class="col-md-1">
+                                        &nbsp;
+                                    </div>
+                                    
+                                    <div class="col-md-10">
+                                        <img class="visible-lg visible-md img-responsive" alt="UIIC" src="./UIIC - Policy Verification UNTWADI EC_files/1.jpg">
+                                             <img class="visible-xs  visible-sm img-responsive" alt="UIIC" src="./UIIC - Policy Verification UNTWADI EC_files/1.jpg">
+                                    </div>
+
+                                    <div class="col-md-1">
+                                        &nbsp;
+                                    </div>
+
+                            </div>
+
+                          </div>
+            <div class="panel-body bluebox">
+
+
+        
+        <script type="text/javascript">
+		
+
+            function toupper(id,evt){
+                document.getElementById(id).value=document.getElementById(id).value.toUpperCase();
+            }
+             $(document).ready(function() {
+
+                            $(document).attr("title", "UIIC - Policy Verification");
+
+
+             $('.email').editable({
+                type: 'text',
+
+                url: '../tb/updateCustomerData.do',
+                title: 'Enter Email',
+                validate: function(value) {
+                    if($.trim(value) == '') {
+                        return 'This field is required';
+                    }else if(!isValidEmailAddress($.trim(value)))
+                    {
+                       return 'Enter Valid Email';
+                    }
+                },
+                success: function(response, newValue) {
+                var parsedData = JSON.parse(response);
+
+
+                    if(parsedData.status == 'error')
+                        {
+                          return parsedData.msg; //msg will be shown in editable form
+                        }
+                },
+                error: function(response, newValue) {
+                     var parsedData1 = JSON.parse(response);
+                    if(parsedData1.status === 500) {
+                        return 'Service unavailable. Please try later.';
+                    } else {
+                        return parsedData1.responseText;
+                    }
+                }
+
+            });
+
+             $('.mobile').editable({
+
+                type: 'text',
+
+                url: '../tb/updateCustomerData.do',
+                title: 'Enter Mobile',
+                validate: function(value) {
+                    if($.trim(value) == '') {
+
+                        return 'This field is required';
+                    }else if(!validatePhone($.trim(value)))
+                    {
+
+                       return 'Enter Valid Mobile Number';
+                    }
+                },
+                success: function(response, newValue) {
+                var parsedData = JSON.parse(response);
+
+
+                    if(parsedData.status == 'error')
+                        {
+                          return parsedData.msg; //msg will be shown in editable form
+                        }
+                },
+                error: function(response, newValue) {
+                     var parsedData1 = JSON.parse(response);
+                    if(parsedData1.status === 500) {
+                        return 'Service unavailable. Please try later.';
+                    } else {
+                        return parsedData1.responseText;
+                    }
+                }
+            });
+
+
+             $('#userCaptcha').attr('placeholder','Enter Captcha');
+
+             });
+
+     function isValidEmailAddress(emailAddress) {
+        var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+        return pattern.test(emailAddress);
+    }
+
+   function validatePhone(txtPhone) {
+
+    var filter = /^[0-9-+]+$/;
+    if (txtPhone.length == 10 && filter.test(txtPhone)) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+        </script>
+        <style type="text/css">
+            BODY{
+                scrollbar-base-color: #D1E0DF;
+                scrollbar-arrow-color: #67724B;
+                scrollbar-DarkShadow-Color:#67724B;
+            }
+             .center
+             {
+             text-align:center !important;
+             }
+
+        </style>
+
+        <link href="./UIIC - Policy Verification UNTWADI EC_files/calendar.css" rel="stylesheet" type="text/css">
+        <script language="javascript" src="./UIIC - Policy Verification UNTWADI EC_files/calendar_gc_customer.js.download"></script>
+        <link href="./UIIC - Policy Verification UNTWADI EC_files/bootstrap-editable.css" rel="stylesheet">
+        <script src="./UIIC - Policy Verification UNTWADI EC_files/bootstrap-editable.js.download"></script>
+		<script type="text/javascript" src="./UIIC - Policy Verification UNTWADI EC_files/custom.js.download" charset="UTF-8"></script>
+        <form name="PolicyVerificationFormBean" method="post" action="https://portal.uiic.in/GCWebPortal/tb/PolicyVerification.do;jsessionid=BA84968607A3FDD76691A4E8C682E092.tomcat3" style="PolicyVerification" autocomplete="off">
+
+              <div class="row divSpacing">
+                <div class="col-md-10 col-sm-offset-1 center">
+                    <u><h4>Online Policy Verification
+                    
+                    </h4></u>
+                </div>
+        </div>
+
+         <div class="row divSpacing">
+                <div class="col-md-10 col-sm-offset-1">
+                   
+
+
+
+<div class="errorMsg">
+<ul>
+
+</ul>
+</div>
+                </div>
+        </div>
+
+
+
+           <div class="row divSpacing">
+                <div class="col-md-3 col-sm-offset-3" style="font-size:17px;">
+                
+                Policy Number :</div>
+                <div class="col-md-3">
+                 
+                 
+               <input type="text" name="policyNumber" maxlength="20" value="1628014419P109949782" onkeyup="toupper(this.id,event)" disabled="disabled" id="policyNumber" class="my_control form-control">
+                
+
+                </div>
+            </div>
+            
+
+                                        <br>
+                                         
+                                         
+
+                                        <br>
+                                        
+                                        
+
+                                        
+                                            
+                                               <div class="table-responsive">
+                                                <table class="table table-bordered table-striped" bgcolor="#01DFD7">
+                                                <thead>
+                                                    <tr bgcolor="#5882FA" height="40px">
+                                                        <th align="center"><span style="color: #FFFFFF;">Proposal No</span></th>
+                                                        
+                                                        <th align="center"><span style="color: #FFFFFF;">Insurance Company Policy Number</span></th>
+                                                        
+                                                        
+                                                        <th align="center"><span style="color: #FFFFFF;">Insured&nbsp;Name</span></th>
+                                                        <th align="center"><span style="color: #FFFFFF;">Effective&nbsp;Date</span></th>
+                                                        <th align="center"><span style="color: #FFFFFF;">Expiry&nbsp;Date</span></th>
+                                                        <th align="center"><span style="color: #FFFFFF;">Dept&nbsp;Name</span></th>
+                                                        <th align="center"><span style="color: #FFFFFF;">Product</span></th>
+                                                        <th align="center"><span style="color: #FFFFFF;">Status</span></th>
+                                                        <th align="center"><span style="color: #FFFFFF;">Vehicle Class</span></th>
+                                                        
+                                                    </tr>
+                                                    </thead>
+                                                    
+                                                    
+
+                                                    <tbody>
+                                                    <tr bgcolor="#FFFFFF" height="40px">
+                                                        <td align="center"><div class="label3">202112308725898</div></td>
+                                                     
+                                                       
+                                                       
+                                                        <td align="center"><div class="label3">1628014422P109949782</div></td>
+                                                        
+                                                        
+                                                        <td align="center"><div class="label3">SAHYADRI CONSTRUCTION COMPANY</div></td>
+                                                        <td align="center"><div class="label3">29/12/2021 11:00</div></td>
+                                                        <td align="center"><div class="label3">31/03/2022 23:59</div></td>
+                                                        <td align="center"><div class="label3">ENGG</div></td>
+                                                        <td align="center"><div class="label3">CONTRACTORSALLRISKSPOLICY</div></td>
+                                                        <td align="center"><div class="label3">ACTIVE</div></td>
+                                                        <td align="center"><div class="label3"></div></td>
+                                                        
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                </div>
+
+                                                
+
+                                            
+                                        
+                                        
+
+                                    
+
+                                        
+                                        <div class="row divSpacing">
+                                             <div class="col-md-10 col-sm-offset-2 center">
+                                               <div>
+                                                    <font face="Verdana">
+                                                    <div align="left"><b><ul><li type="square">TO VERIFY YOUR TATA/TOYOTA POLICIES CLICK <a href="https://portal.uiic.in/CUSTOMERPORTAL/oem_pol_dtls.html" target="_blank">HERE</a></li></ul></b></div>
+                                                </font>
+                                               </div>
+                                            </div>
+                                        </div>
+
+
+
+                                    
+                                    <br>
+
+                                      <div class="row divSpacing">
+                                             <div class="col-md-10 col-sm-offset-2 center">
+                                               <div>
+                                                    <font face="Verdana">
+                                                    <div align="left"><b><ul><li>Kindly verify the validity of your policy using the above facility.</li></ul></b></div>
+                                                </font>
+                                               </div>
+                                            </div>
+                                        </div>
+                                        <div class="row divSpacing">
+                                             <div class="col-md-10 col-sm-offset-2 center">
+                                               <div>
+                                                    <font face="Verdana">
+                                                    <div align="left"><font face="Verdana">Note : If any policy number is found to be invalid kindly cross check with policy issuing office printed on the policy document for confirmation of the same, and also intimate by email to <a href="mailto:customercare@uiic.co.in" target="_top">customercare[at]uiic[dot]co[dot]in</a></font></div>
+                                                </font>
+                                               </div>
+                                            </div>
+                                        </div>
+
+
+        </form>
+
+
+
+
+<div id="mask"></div>
+
+
+
+
+<div class="row divSpacing">
+
+                    <div class="col-md-5">
+                        &nbsp;
+                    </div>
+
+                    <div class="col-md-7">
+                        <span class="tdfooter">
+                        <font face="Verdana">2010 United India Insurance Company Ltd.</font>
+                          <a href="http://uiic.co.in/download.jsp" target="_blank"></a>
+                        </span>
+                    </div>
+
+                </div>
+
+                <div class="row divSpacing">
+
+                    <div class="col-md-3">
+                        &nbsp;
+                    </div>
+
+                    <div class="col-md-9">
+                        <span class="tdfooter">
+                            <font face="Verdana">For Mozila best viewed in </font> <font color="#FF0000">version 3.5</font> and above  and
+                            <font face="Verdana">For Google Chrome best viewed in </font> <font color="#FF0000">version 7.0</font> and above
+                        </span>
+                    </div>
+
+                </div>
+
+</div>
+                <div id="footer" style="color:#EFEFEF;padding:3px 0 0 0;">
+                   Developed &amp; Maintained By TCS
+                   
+                </div>
+		</div>
+	</div>
+
+
+    <table id="calenderTable">
+        <tbody id="calenderTableHead">
+          <tr>
+            <td colspan="4" align="center">
+	          <select onchange="showCalenderBody(createCalender(document.getElementById(&#39;selectYear&#39;).value,
+	           this.selectedIndex, false));" id="selectMonth">
+	              <option value="0">Jan</option>
+	              <option value="1">Feb</option>
+	              <option value="2">Mar</option>
+	              <option value="3">Apr</option>
+	              <option value="4">May</option>
+	              <option value="5">Jun</option>
+	              <option value="6">Jul</option>
+	              <option value="7">Aug</option>
+	              <option value="8">Sep</option>
+	              <option value="9">Oct</option>
+	              <option value="10">Nov</option>
+	              <option value="11">Dec</option>
+	          </select>
+            </td>
+            <td colspan="2" align="center">
+			    <select onchange="showCalenderBody(createCalender(this.value,
+				document.getElementById(&#39;selectMonth&#39;).selectedIndex, false));" id="selectYear">
+				</select>
+			</td>
+            <td align="center">
+			    <a href="file:///C:/My%20Web%20Sites/legal/portal.uiic.in/GCWebPortal/tb/PolicyVerificationd221.html#" onclick="closeCalender();"><font color="#003333" size="+1">X</font></a>
+			</td>
+		  </tr>
+       </tbody>
+       <tbody id="calenderTableDays">
+         <tr style="">
+           <td>Sun</td><td>Mon</td><td>Tue</td><td>Wed</td><td>Thu</td><td>Fri</td><td>Sat</td>
+         </tr>
+       </tbody>
+       <tbody id="calender"></tbody>
+    </table>
+
+
+    <div id="mask"></div>
+    
+
+<!-- Mirrored from portal.uiic.in/GCWebPortal/tb/PolicyVerification.do?p=51525F434F44457C3136323830313434313950313032343034363539 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Mar 2022 13:53:54 GMT -->
+
+</body></html>

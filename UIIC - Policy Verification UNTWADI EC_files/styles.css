@@ -1,0 +1,448 @@
+.bodystyle {
+	margin: 0;
+	padding: 0;
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+	font-family: Arial;
+	background-color:#e5e8ef;
+	background-image:url('../images/bodygv_bg.html');
+		}
+
+#wrapper {
+    margin: 0 auto;
+    position: relative;
+    width: 1000px;
+}
+
+#bodywrapper {
+    margin: 0 auto;
+    position: relative;
+    width: 1000px;
+   /* margin-top:15px;*/
+    background:#ffffff;
+}
+
+#sidebarwrapper {
+    width: 350px;
+    padding:5px;
+    background:#f7faff;
+    border:1px solid #d7d7d9;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+.maincontent {
+    width: 640px;
+}
+
+.maincontentcol {
+    width: 520px;
+}
+
+.maincontentcol2 {
+    width: 480px;
+}
+
+
+.maincontent2 {
+    width: 998px;
+}
+
+.firstusrblock {
+    border: 1px solid #dddddd;
+    background-color: #e0e5eb;
+    /*------------  added by Arindam Das on 06/08/2015 for CGMS responsive design  firstusrblock & sidebar  ---------------*/
+    border-style:outset;
+    border-radius:6px;
+}
+
+.sidebar {
+    border: 2px solid #dddddd;
+    background-color: #f7faff;
+    border-style:outset;
+    border-radius:6px;
+}
+
+.rowdiv {
+    border: 1px;
+    background-color: #f7faff;
+    border-radius:6px;
+    border-style:dotted solid;
+}
+
+
+.logodiv { background-color:#01a4ab;}
+.bckgrnd { background-color:#BDCAE0;}
+/*------------  End added by Arindam Das on 06/08/2015 for CGMS responsive design   firstusrblock & sidebar   ---------------*/
+.sidebartitle {font:20px Georgia; color:#333333; font-weight:600;}
+.sidebartext {font:12px Arial; color:#7f7e7e;}
+.sidebarinfo1 {font:16px Arial; color:#007c82; font-weight:600;}
+.sidebarinfo1 a{font:16px Arial; color:#007c82; font-weight:600; text-decoration:none;}
+.sidebarinfo {font:22px Arial; color:#007c82; font-weight:600;}
+.sidebardivider {border-top:1px dashed #cccccc;}
+.logotablebg { background-color:#ffcc33;border-bottom:5px solid #4863A0; }
+.logoimg  {background: url("../images/mylogo.html") no-repeat; width:100%;height:96px;}
+.logotablergtimg {background: url("../images/1.jpg") no-repeat;height: 83px;}
+.logotxt {background: url("../images/2.jpg") no-repeat;height: 83px;}
+.contenttable { background-color:#ffffff;border:1px solid #d7d7d9; margin-bottom:5px; }
+
+.bluebox
+{
+float:center;
+border:1px solid #C6C6CC;
+border-style:none;
+/*background-color:#37DBFF; Dodger Blue Shade*/
+background-color: #f8f8df;
+padding:10px;
+}
+
+.subhead { font-family: verdana,Geneva,Arial, Helvetica, sans-serif; 	color: black; font-weight: bold; font-size:11px;}
+
+/*.contentheader { background-color:#231c6a;border:1px solid #d7d7d9; padding:10px; font:bold 18px Georgia; color:#ffffff;}*/
+.contentheader { background-color:#231c6a; padding:10px; font:bold 18px Georgia; color:#ffffff;}
+.contentwelcome {font:14px Arial; color:#0c0169; padding-top:15px; font-weight:600;}
+.contentwelcometxt {font:14px Arial; color:#333333; padding-top:15px; font-weight:300;}
+.linktxt {font:14px Arial; color:#0c0169; padding-top:15px; font-weight:300; border-bottom: 1px dashed #d5d3d3;}
+.linktxt a{font:14px Arial; color:#0c0169; padding-top:15px; font-weight:300; text-decoration:none;}
+.contentlabel {font:12px Arial; color:#4e4d4d; font-weight:400;}
+.contentlabellogin {font:13px Arial; color:#4e4d4d; font-weight:600;}
+.contentinfotext {font:13px Arial; color:#7f7e7e;}
+.redstar {font:12px Arial; color:#ff0101; font-weight:600;}
+.smalltxt {font:10px Arial; color:#7f7e7e; font-weight:300;}
+.gvchktxt {font:12px Arial; color:#7f7e7e; font-weight:300;}
+.successbox {
+    border: 1px solid #dddddd;
+    background-color: #e7fec8;
+    /*------------  added by Arindam Das on 11/08/2015 for CGMS responsive design  tabhead   ---------------*/
+    border-radius:6px;
+}
+.successtxt { font:12px Arial; color:#578b0f; font-weight:600;
+/*------------  added by Arindam Das on 11/08/2015 for CGMS responsive design  tabhead   ---------------*/
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+ }
+.tabhead {font:12px Arial; color:#303030; font-weight:600; background-color:#eae8e9;
+/*------------  added by Arindam Das on 10/08/2015 for CGMS responsive design  tabhead   ---------------*/
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.tabtxt {font:12px Arial; color:#858585; font-weight:300;
+/*------------  added by Arindam Das on 10/08/2015 for CGMS responsive design  tabtxt   ---------------*/
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+ }
+.tabtxt1 {font:14px Arial; color:#585858; font-weight:700;}
+.tablink {font:12px Arial; color:#0c0169; font-weight:300; text-decoration:none;
+/*------------  added by Arindam Das on 10/08/2015 for CGMS responsive design  tablink   ---------------*/
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+ }
+.tablink a{font:12px Arial; color:#0c0169; font-weight:300; text-decoration:none;}
+.tabborder { border:1px dotted #cccccc;}
+
+/*------------  added by Arindam Das on 10/08/2015 for CGMS responsive design  tabborder1   ---------------*/
+.tabborder1 { border:1px dotted #cccccc;  border-radius:6px;}
+/*------------  End added by Arindam Das on 10/08/2015 for CGMS responsive design  tabborder1   ---------------*/
+/*------------  added by Arindam Das on 19/08/2015 for CGMS responsive design  contentheader1   ---------------*/
+.contentheader1 { background-color:#FFFFFF; padding-bottom:1px; font:bold 18px Georgia; color:#ffffff;}
+
+#text {
+  z-index: 100;
+  position: relative;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  left: 150px;
+  top: 350px;
+}
+
+.homeImageLink {
+   position: absolute;
+   top: 19px;
+   right: 16px;
+   text-align: center;
+   width: 60%;
+   padding:2px 2px;
+   
+}
+
+
+/*------------ End  added by Arindam Das on 19/08/2015 for CGMS responsive design  contentheader1   ---------------*/
+.headerstyle {
+	padding: 4px;
+	background-repeat: repeat-x;
+	font: 14px Arial;
+    font-weight:400;
+    color:#004144;
+	background-color:#bdeef3;
+	background-image:url('../images/nic_gvconbg.html');
+    text-transform:uppercase;
+    height:25px;
+    padding-left:9px;
+		}
+/*.gvtextboxstyle
+{
+	border-top: 2px #a4b6c4 solid; 
+    border-bottom: 2px #ccd6df solid; 
+    border-left: 2px #cad7e0 solid;
+    border-right: 2px #cad7e0 solid;
+	height: 17px; 
+	width: 200px; 
+	font-family: Arial; 
+	font-size: 9pt;
+    background-color:#e6edf5;
+    color:#a7a8aa;
+    padding:5px;
+} */
+
+
+.gvtextboxstyle {
+    background-color: #e6edf5;
+    border-color: #a4b6c4 #cad7e0 #ccd6df;
+    border-style: solid;
+    border-width: 2px;
+   /*color: #a7a8aa;*/
+    color:#4D4D4D;
+    font-weight: bold;
+    font-family: Arial;
+    /*font-size: 9pt;
+    height: 30px;
+    padding: 5px;
+    width: 213px;*/
+
+    font-size: 12px;
+    height: 25px;
+    padding: 0px 0px;
+    width: 213px;
+}
+.gvtextareastyle 
+{
+	border-top: 2px #a4b6c4 solid; 
+    border-bottom: 2px #ccd6df solid; 
+    border-left: 2px #cad7e0 solid;
+    border-right: 2px #cad7e0 solid;
+	/*height: 120px;
+	width: 215px; */
+	font-family: Arial; 
+	/*font-size: 9pt;*/
+    background-color:#e6edf5;
+    /*color:#a7a8aa;*/
+    color:#4D4D4D;
+    font-weight: bold;
+    /*padding:5px;*/
+
+    font-size: 12px;
+    height: 120px;
+    padding: 0px 0px;
+    width: 213px;
+}
+.gvcomboboxstyle
+{
+	border-top: 2px #a4b6c4 solid; 
+    border-bottom: 2px #ccd6df solid; 
+    border-left: 2px #cad7e0 solid;
+    border-right: 2px #cad7e0 solid;
+	/*height: 31px;
+	width: 213px;  */
+	font-family: Arial; 
+	/*font-size: 9pt; */
+    background-color:#e6edf5;
+    /*color:#a7a8aa;*/
+    color:#4D4D4D;
+    font-weight: bold;
+    /*padding:5px;
+    padding-left:1px; */
+
+    font-size: 12px;
+    height: 25px;
+    padding: 0px 0px;
+    width: 213px;
+}
+.gvbuttonstyle 
+{
+	border-top: 1px #bdbdbd solid; 
+	height: 30px;
+	width: 100px;
+	font-family: Arial; 
+	font-size: 9pt;
+    background-color:#007d82;
+    color:#ffffff;
+    padding:5px;
+    text-transform:uppercase;
+    font-weight:600;
+}
+
+
+.tollfreetxt {
+    color:#ffffff;
+    font: 200 18px Arial;
+   
+}
+.tollfreeno {
+    color:  #231c6a;
+    font: 600 24px Arial;
+   
+}
+
+/* calendar styles */
+#calendar_div, #calendar_inline_div {
+	display: none;
+	border: 1px solid #777;
+	z-index: 10;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+}
+#calendar_inline_div {
+	display: block;
+	border: 0;
+}
+.calendar_dialog {
+	padding: 5px;
+	background: #ddd;
+	border: 4px ridge #ddd !important;
+}
+#calendar_div a, #calendar_inline_div a {
+	cursor: pointer;
+	cursor: hand;
+}
+button.calendar_trigger {
+	width: 25px;
+}
+img.calendar_trigger {
+	margin: 2px;
+	vertical-align: middle;
+}
+#calendar_prompt {
+	float: left;
+	width: 181px;
+	padding: 2px;
+	background: #ddd;
+	color: #000;
+}
+* html #calendar_prompt {
+	width: 185px;
+}
+#calendar_control, #calendar_links, #calendar_header, #calendar {
+	clear: both;
+	float: left;
+	width: 185px;
+	color: #fff;
+}
+#calendar_control {
+	background: #400;
+}
+#calendar_links {
+	background: #000;
+}
+#calendar_control a, #calendar_links a {
+	font-weight: bold;
+	font-size: 80%;
+	letter-spacing: 1px;
+	color: #eee;
+	padding: 2px 5px;
+}
+#calendar_control a:hover {
+	background: #fdd;
+	color: #333;
+}
+#calendar_links a:hover, .calendar_titleRow a:hover {
+	background: #ddd;
+	color: #333;
+}
+#calendar_links label { /* disabled links */
+	padding: 2px 5px;
+	color: #888;
+}
+#calendar_clear, #calendar_prev {
+	float: left;
+}
+#calendar_current {
+	float: left;
+	width: 35%;
+	text-align: center;
+}
+#calendar_close, #calendar_next {
+	float: right;
+}
+#calendar_header {
+	background: #333;
+	text-align: center;
+	font-weight: bold;
+}
+#calendar_header select {
+	background: #333;
+	color: #fff;
+	border: 0px;
+	font-weight: bold;
+}
+#calendar {
+	background: #ccc;
+	text-align: center;
+	font-size: 100%;
+}
+#calendar a {
+	width: 100%;
+	display: block;
+}
+#calendar a:hover {
+	color: #eee;
+}
+#calendar .calendar_titleRow {
+	background: #777;
+}
+#calendar .calendar_titleRow a {
+	color: #eee;
+}
+#calendar .calendar_titleRow a:hover {
+	color: #000;
+}
+#calendar .calendar_daysRow {
+	background: #eee;
+	color: #666;
+}
+#calendar .calendar_daysCell {
+	border: 1px solid #ddd;
+}
+#calendar .calendar_daysCell a {
+	color: #000;
+	width: 100%;
+}
+#calendar .calendar_daysCell a:hover {
+	background: none;
+}
+#calendar .calendar_weekEndCell {
+	background: #ddd;
+}
+#calendar .calendar_daysCellOver {
+	background: #fff;
+	border: 1px solid #777;
+}
+#calendar .calendar_unselectable {
+	color: #888;
+}
+#calendar_today {
+	background: #faa !important;
+}
+#calendar_currentDay {
+	background: #999 !important;
+}
+#calendar_cover {
+    display: none; /*sorry for IE5*/
+    display/**/: block; /*sorry for IE5*/
+    position: absolute; /*must have*/
+    z-index: -1; /*must have*/
+    filter: mask(); /*must have*/
+    top: -4px; /*must have*/
+    left: -4px; /*must have*/
+    width: 193px; /*must have to match width and borders*/
+    height: 200px; /*must have to match maximum height*/
+}

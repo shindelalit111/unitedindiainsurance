@@ -1,0 +1,651 @@
+
+/*-- This Css file contains only for specific style codes for Step1 of all pages, We can include all Step1 specific style codes here --*/
+
+/*.tdtitlemsg { font-family:Helvetica,Times New Roman,Verdana, Sans-Serif; font-weight: light; font-size: 13; color: #FF0000; } red*/
+
+.tdval { font-family: verdana, Arial, Helvetica, sans-serif ; font-weight: light; font-size: 11; color:#000000;} /*Black - Name changed 07092011*/
+
+.tdval1 { font-family: verdana, Arial, Helvetica, sans-serif ; font-weight: light; font-size: 10; color:#000000;} /*Black - Name changed 07092011*/
+
+td.column {
+	font-family:Helevetica,Geneva,Sans-Serif;
+	font-size:13px;
+	text-align: center;
+	color:#000000; /*Black*/
+	font-weight:bold;
+	background-color:#FFFFFF; /*White*/
+}
+
+td.column1 {
+		text-align:center;
+		background-color:#FFFFFF; /*white*/
+}
+
+
+/* For Vehicle Cost/IDV page*/
+
+td.table1{
+	font-family:Helevetica,Geneva,Sans-Serif;
+	font-size:12px;
+	color:#000000; /*Black*/
+	font-weight:light;
+	text-align: center;
+	background-color: #FFFFFF; /*white*/
+}
+
+td.table2 {
+	font-family:Times New Roman,serif;
+	font-size:11px;
+	color:#777;
+	font-weight:bold;
+	text-align: left;
+	background-color: #FFFFFF;  /*white*/
+}
+
+.Tab
+{
+border:1px solid #ccc;
+width: 350px;
+text-align:left;
+background-color:#FFFFF0; /*ivory*/
+}
+
+.Advtab
+{
+border:1px solid #ccc;
+width: 700px;
+text-align:center;
+background-color:#E1E1E1;  /*Dim Gray Shade*/
+}
+
+td.basictab{
+	 width:300px;
+	font-family:verdana,Times New Roman,serif;
+	font-size:11px;
+	color:#FFFFFF;  /*white*/
+	font-weight:bold;
+	text-align: left;
+	background-color: #306DD3; /* Blue shade*/
+}
+
+td.tab1{
+    width:300px;
+	font-family:verdana,Times New Roman,serif;
+	font-size:11px;
+	color:#000000; /*Black*/
+	font-weight:bold;
+	text-align: left;
+	background-color: #E1E1E1; /*Dim Gray Shade*/
+}
+
+td.subtab{
+    width:600px;
+	font-family:verdana,Times New Roman,serif;
+	font-size:11px;
+	color:#000000; /*Black*/
+	font-weight:bold;
+	text-align: left;
+	background-color: #E1E1E1; /*Dim Gray Shade*/
+}
+
+td.linktab{
+    width:300px;
+	font-family:verdana,Times New Roman,serif;
+	font-size:11px;
+	color:#000000; /*Black*/
+	font-weight:bold;
+	text-align: right;
+	background-color: #E1E1E1; /*Dim Gray Shade*/
+}
+
+
+td.tab2{
+    width:250px;
+	font-family:verdana, Arial, Helvetica, sans-serif ;
+	font-size:11px;
+	color:#000000; /*Black*/
+	font-weight:light;
+	text-align: left;
+}
+
+td.tab3{
+    width:250px;
+	font-family:Helevetica,Geneva,Sans-Serif;
+	font-size:11px;
+	color:#000000; /*Black*/
+	font-weight:light;
+	text-align: right;
+}
+td.tab4{
+    width:250px;
+	font-family:Helevetica,Geneva,Sans-Serif;
+	font-size:11px;
+	color:#000000; /*Black*/
+	font-weight:light;
+	text-align: center;
+}
+
+/* from Step1_pauiic.css - need to check with jsp
+td.tab1{
+	font-family:verdana,Times New Roman,serif;
+	font-size:12px;
+	color:#000000;
+	font-weight:light;
+	text-align: center;
+	background-color: #E1E1E1; Dim Gray Shade
+}
+
+td.tab2{
+	font-family:Helevetica,Geneva,Sans-Serif;
+	font-size:11px;
+	color:#000000;
+	font-weight:light;
+	text-align: left;
+}*/
+
+/* For PopUp Window */
+.formTable {
+	text-align: center;
+	width: 800px;
+	padding: 0;
+	margin: 0;
+	font: 12px/160% 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, Sans-Serif;
+	border:2px solid #306DD3;
+	background: #FFFFFF; /*White*/
+}
+
+ td.colhead{
+	padding: 3px 3px 3px 3px;
+	font-family:verdana,Times New Roman,serif;
+	font-size:13px;
+	color:#FFFFFF; /*White*/
+	font-weight:bold;
+	text-align: center;
+	background-color: #306DD3; /* Blue shade*/
+}
+
+ td.colsubhead{
+	padding: 3px 3px 3px 3px;
+	font-family:verdana,Times New Roman,serif;
+	font-size:11px;
+	color:#000000; /*Black*/
+	font-weight:bold;
+	text-align: center;
+	background-color: #CCE2F4;  /* Light Blue shade*/
+}
+
+td.addchartcol1 {
+padding: 6px 6px 6px 12px;
+	font-family:verdana,Times New Roman,serif;
+	font-size:11px;
+	color:#000000; /*Black*/
+	font-weight:light;
+	text-align: center;
+	background-color: #FFFFFF; /*White*/
+}
+
+td.addchartcol2 {
+padding: 6px 6px 6px 12px;
+	font-family:verdana,Times New Roman,serif;
+	font-size:11px;
+	color:#000000; /*Black*/
+	font-weight:light;
+	text-align: left;
+	background-color: #FFFFFF;  /*White*/
+}
+
+/* For Fire & Bulg. Page */
+
+td.locate{
+padding: 3px 3px 3px 3px;
+	font-family:verdana,Times New Roman,serif;
+	font-size:11px;
+	color:#000000; /*Black*/
+	font-weight:light;
+	text-align: center;
+	background-color: #FFFFFF; /*White*/
+}
+
+td.locate1{
+padding: 3px 3px 3px 3px;
+	font-family:verdana,Times New Roman,serif;
+	font-size:10px;
+	color:#000000; /*Black*/
+	font-weight:light;
+	text-align: left;
+	background-color: #FFFFFF; /*White*/
+}
+
+.moreFireCoversbutton
+{
+cursor:hand;
+font-family:verdana,Times New Roman,serif;
+font-size:11px;
+color:#000000; /*Black*/
+font-weight:bold;
+text-align:center;
+width:220px;
+height:25px;
+background-color:#E1E1E1; /*Dim Gray Shade*/
+border-style:outset;
+}
+
+.getQuotesbutton
+{
+cursor:hand;
+font-family:verdana,Times New Roman,serif;
+font-size:11px;
+color:#000000; /*Black*/
+font-weight:bold;
+text-align:center;
+width:220px;
+height:25px;
+background-color:#E1E1E1; /*Dim Gray Shade*/
+border-style:outset;
+}
+
+.Firebackbutton
+{
+cursor:hand;
+font-family:verdana,Times New Roman,serif;
+font-size:12px;
+color:#000000; /*Black*/
+font-weight:bold;
+text-align: center;
+width:100px;
+height:25px;
+background-color:#E1E1E1; /*Dim Gray Shade*/
+border-style:outset;
+}
+
+.Firecancelbutton
+{
+cursor:hand;
+font-family:verdana,Times New Roman,serif;
+font-size:12px;
+color:#000000; /*Black*/
+font-weight:bold;
+text-align: center;
+width:100px;
+height:25px;
+background-color:#E1E1E1; /*Dim Gray Shade*/
+border-style:outset;
+}   
+
+.gendropdown {
+	 background-color: #fff;
+	 border: 1px solid #d3d3d3; /*light Gray Shade*/
+	 width: 100px;
+	 color: #666;
+	 font-size:12px;
+	}
+	
+.statedropdown {
+	 background-color: #fff;
+	 border: 1px solid #d3d3d3;  /*light Gray Shade*/
+	 width: 100px;
+	 color: #666;
+	 font-size:12px;
+	}
+	
+.constdropdown {
+	 background-color: #fff;
+	 border: 1px solid #d3d3d3;  /*light Gray Shade*/
+	 width: 70px;
+	 color: #666;
+	 font-size:12px;
+	}
+
+/****For Marine Open Cover Policy****/
+
+td.opencovtab1{
+    width:200px;
+	font-family:verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#000000; /*Black*/
+	font-weight:light;
+	text-align: center;
+}
+
+td.opencovtab2{
+    width:200px;
+	font-family:verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#000000; /*Black*/
+	font-weight:light;
+	text-align: center;
+}
+
+td.opncovdecla{
+padding: 3px 3px 3px 3px;
+	font-family:verdana,Times New Roman,serif;
+	font-size:11px;
+	color:#FFFFFF; /*White*/
+	font-weight:bold;
+	text-align: center;
+	background-color: #306DD3; /*Blue shade*/
+}
+
+
+/*For Marine Cover Asper 03-06-2011*/
+.addconsignment
+{
+cursor:hand;
+font-family:verdana,Times New Roman,serif;
+font-size:12px;
+color:#000000; /*Black*/
+font-weight:bold;
+text-align: center;
+width:150px;
+height:25px;
+background-color:#E1E1E1; /*Dim Gray Shade*/
+border-style:outset;
+}
+
+.deleteconsignment
+{
+cursor:hand;
+font-family:verdana,Times New Roman,serif;
+font-size:12px;
+color:#000000; /*Black*/
+font-weight:bold;
+text-align: center;
+width:150px;
+height:25px;
+background-color:#E1E1E1;  /*Dim Gray Shade*/
+border-style:outset;
+}
+
+/*For Marine Cover Asper 03-06-2011*/
+.addCommodity
+{
+cursor:hand;
+font-family:verdana,Times New Roman,serif;
+font-size:12px;
+color:#000000; /*Black*/
+font-weight:bold;
+text-align: center;
+width:150px;
+height:25px;
+background-color:#E1E1E1;  /*Dim Gray Shade*/
+border-style:outset;
+}
+
+.deleteCommodity
+{
+cursor:hand;
+font-family:verdana,Times New Roman,serif;
+font-size:12px;
+color:#000000; /*Black*/
+font-weight:bold;
+text-align: center;
+width:150px;
+height:25px;
+background-color:#E1E1E1; /*Dim Gray Shade*/
+border-style:outset;
+}
+
+/*For Marine Cover Web*/
+td.marinetab{
+	 width:300px;
+	font-family:verdana,Times New Roman,serif;
+	font-size:11px;
+	color:#FFFFFF; /*White*/
+	font-weight:bold;
+	text-align: center;
+	background-color: #306DD3; /*Blue shade*/
+}
+
+td.marinetab2{
+    width:300px;
+	font-family:verdana, Arial, Helvetica, sans-serif ;
+	font-size:11px;
+	color:#000000; /*Black*/
+	font-weight:light;
+	text-align: center;
+}
+
+.addinvoicebutton
+{
+cursor:hand;
+font-family:verdana,Times New Roman,serif;
+font-size:12px;
+color:#000000; /*Black*/
+font-weight:bold;
+text-align: center;
+width:100px;
+height:25px;
+background-color:#E1E1E1; /*Dim Gray Shade*/
+border-style:outset;
+}
+	
+.addrow
+{
+cursor:hand;
+font-family:verdana,Times New Roman,serif;
+font-size:12px;
+color:#000000; /*Black*/
+font-weight:bold;
+text-align:center;
+width:100px;
+height:25px;
+background-color:#E1E1E1; /*Dim Gray Shade*/
+border-style:outset;
+
+}
+
+.deleterow
+{
+cursor:hand;
+font-family:verdana,Times New Roman,serif;
+font-size:12px;
+color:#000000; /*Black*/
+font-weight:bold;
+text-align:center;
+width:100px;
+height:25px;
+background-color:#E1E1E1; /*Dim Gray Shade*/
+border-style:outset;
+
+}
+
+.save
+{
+cursor:hand;
+font-family:verdana,Times New Roman,serif;
+font-size:12px;
+color:#000000; /*Black*/
+font-weight:bold;
+text-align:center;
+width:100px;
+height:25px;
+background-color:#E1E1E1; /*Dim Gray Shade*/
+border-style:outset;
+
+}
+
+.update
+{
+cursor:hand;
+font-family:verdana,Times New Roman,serif;
+font-size:12px;
+color:#000000; /*Black*/
+font-weight:bold;
+text-align:center;
+width:100px;
+height:25px;
+background-color:#E1E1E1; /*Dim Gray Shade*/
+border-style:outset;
+
+}
+
+.home
+{
+cursor:hand;
+font-family:verdana,Times New Roman,serif;
+font-size:12px;
+color:#000000; /*Black*/
+font-weight:bold;
+text-align:center;
+width:100px;
+height:25px;
+background-color:#E1E1E1; /*Dim Gray Shade*/
+border-style:outset;
+
+}
+
+/* UniHomeCare Step2*/
+td.unihomeloanee{
+padding: 3px 3px 3px 3px;
+	font-family:verdana,Times New Roman,serif;
+	font-size:11px;
+	color:#FFFFFF; /*White*/
+	font-weight:bold;
+	text-align: center;
+	background-color: #306DD3;  /*Blue shade*/
+}
+
+/* PA Step1 Plan Table */
+td.PAcolumn {
+	font-family:Helevetica,Geneva,Sans-Serif;
+	font-size:15px;
+	text-align: center;
+	color:#000000;/*black*/
+	font-weight:bold;
+	background-color:#FFFFFF; /*White*/
+}
+
+td.PAsubheadcoln{
+		font-family: verdana, Arial, Helvetica, sans-serif ;
+		font-size:12px;
+		text-align:center;
+		color:#000000;/*black*/
+		font-weight:light;
+		background-color:#FFFFFF; /*white*/
+}
+
+td.PAcolumn1 {
+		font-family: verdana, Arial, Helvetica, sans-serif ;
+		font-size:11px;
+		text-align:left;
+		color:#000000;/*black*/
+		font-weight:light;
+		background-color:#FFFFFF; /*white*/
+}
+
+/*  For DealerConfigFireBurgAddOnCover */
+.sectionsformTable {
+	text-align: center;
+	width: auto;
+	padding: 1px 1px 1px 1px;
+	margin: 0;
+	font: 12px/160% 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, Sans-Serif;
+	border:2px solid #306DD3;   /* Blue shade*/
+	background: #CCE2F4;  /* Light Blue shade*/
+}
+
+ td.col{
+	padding: 3px 3px 3px 3px;
+	font-family:verdana,Times New Roman,serif;
+	font-size:13px;
+	color:#FFFFFF; /*White*/
+	font-weight:bold;
+	text-align: center;
+	background-color: #306DD3;   /*Blue shade*/
+}
+
+td.col1{
+	padding: 3px 3px 3px 3px;
+	font-family:verdana,Times New Roman,serif;
+	font-size:11px;
+	color:#000000; /*Block*/
+	font-weight:bold;
+	text-align: center;
+	background-color: #CCE2F4; /*Blue shade*/
+}
+
+td.col2 {
+padding: 3px 3px 3px 3px;
+	font-family:verdana,Times New Roman,serif;
+	font-size:11px;
+	color:#000000;  /*Block*/
+	font-weight:light;
+	text-align: left;
+	background-color: #FFFFFF; /*White*/
+}
+ 
+/* For DealerConfigFireBurgSections */
+ .addrowsample
+{
+cursor:hand;
+font-family:verdana,Times New Roman,serif;
+font-size:11px;
+color:#000000;/*black*/
+font-weight:bold;
+text-align:center;
+width:60px;
+height:20px;
+background-color:#E1E1E1; /*Dim Gray Shade*/
+border-style:outset;
+
+}
+
+.deleterowsample
+{
+cursor:hand;
+font-family:verdana,Times New Roman,serif;
+font-size:11px;
+color:#000000;/*black*/
+font-weight:bold;
+text-align:center;
+width:60px;
+height:20px;
+background-color:#E1E1E1; /*Dim Gray Shade*/
+border-style:outset;
+
+}
+
+.back
+{
+cursor:hand;
+font-family:verdana,Times New Roman,serif;
+font-size:12px;
+color:#000000;/*black*/
+font-weight:bold;
+text-align: center;
+width:100px;
+height:25px;
+background-color:#E1E1E1; /*Dim Gray Shade*/
+border-style:outset;
+}
+
+/* For Motor - E&EAccDet */
+td.Motcol{
+	padding: 6px 6px 6px 12px;
+	font-family:verdana,Times New Roman,serif;
+	font-size:13px;
+	color:#FFFFFF; /*White*/
+	font-weight:bold;
+	text-align: center;
+	background-color: #306DD3;  /*Blue shade*/
+}
+
+ td.Motcol1{
+	padding: 3px 3px 3px 3px;
+	font-family:verdana,Times New Roman,serif;
+	font-size:11px;
+	color:#000000; /*Black*/
+	font-weight:bold;
+	text-align: center;
+	background-color: #CCE2F4; /*Light Blue shade*/
+}
+
+td.Motcol2 {
+padding: 3px 3px 3px 3px;
+	font-family:verdana,Times New Roman,serif;
+	font-size:11px;
+	color:#000000; /*Black*/
+	font-weight:bold;
+	text-align: center;
+	background-color: #FFFFFF; /*White*/
+}
